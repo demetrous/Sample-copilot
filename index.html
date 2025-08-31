@@ -3,14 +3,15 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Sample Static Site</title>
+    <title>Dmitrii Karaulanov — Software Engineer</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header class="site-header">
       <div class="container">
-        <h1 class="logo">Sample Site</h1>
+        <h1 class="logo">Dmitrii Karaulanov</h1>
         <nav>
+          <a href="#contact" class="btn">Contact</a>
           <button id="themeToggle" class="btn">Toggle Theme</button>
         </nav>
       </div>
@@ -18,32 +19,106 @@
 
     <main class="container">
       <section class="hero">
-        <h2>Welcome</h2>
+        <h2>Software Engineer — Enterprise, Cloud & AI</h2>
         <p>
-          This is a minimal static site scaffolded for deployment to AWS Amplify
-          via GitHub.
+          Hi, I'm Dmitrii Karaulanov. I bring over 15 years building enterprise
+          solutions, cloud platforms, and AI-enabled systems. I design reliable
+          architectures and lead delivery for production-critical services.
         </p>
-        <button id="cta" class="btn primary">Click me</button>
-        <p id="msg" aria-live="polite"></p>
+        <p class="muted">
+          Available for consulting and senior engineering roles.
+        </p>
+        <button id="cta" class="btn primary">Get in touch</button>
+        <p id="msg" aria-live="polite" class="form-status"></p>
       </section>
 
       <section class="grid">
         <article>
-          <h3>Vanilla HTML</h3>
-          <p>No frameworks — just plain HTML, CSS and JS.</p>
-        </article>
-        <article>
-          <h3>Fast deploy</h3>
+          <h3>Experience</h3>
           <p>
-            Connect this repository to AWS Amplify Console and deploy from the
-            chosen branch.
+            15+ years delivering enterprise-grade systems across finance,
+            energy, and cloud-native platforms.
           </p>
+          <ul>
+            <li>Architected multi-tenant SaaS platforms</li>
+            <li>Led cloud migrations and cost optimizations (AWS)</li>
+            <li>Built ML inference pipelines and data platforms</li>
+          </ul>
         </article>
+
+        <article>
+          <h3>Skills</h3>
+          <p>
+            Architecture · Cloud (AWS) · AI/ML · Distributed Systems · DevOps
+          </p>
+          <div class="skills">
+            <span>Java</span>
+            <span>Python</span>
+            <span>Node.js</span>
+            <span>Docker / Kubernetes</span>
+            <span>Terraform</span>
+          </div>
+        </article>
+      </section>
+
+      <section id="projects" class="projects">
+        <h3>Selected Projects</h3>
+        <div class="grid">
+          <article>
+            <h4>Real-time analytics platform</h4>
+            <p>
+              Built a streaming pipeline for real-time business insights using
+              Kafka and serverless components.
+            </p>
+          </article>
+          <article>
+            <h4>AI-driven document processing</h4>
+            <p>
+              Designed and delivered an OCR + NLP pipeline to extract and
+              classify documents at scale.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <h3>Contact</h3>
+        <p>
+          If you'd like to reach out, send me a message using the form below.
+          The form will open your email client with the message prepared; you
+          can also configure a server endpoint later.
+        </p>
+
+        <form id="contactForm">
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required />
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+          <div class="form-row">
+            <label for="subject">Subject</label>
+            <input id="subject" name="subject" type="text" />
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+
+          <div class="form-row">
+            <button type="submit" class="btn primary">Send Message</button>
+            <button type="button" id="clearForm" class="btn">Clear</button>
+          </div>
+
+          <p id="formStatus" class="form-status" aria-live="polite"></p>
+        </form>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="container">Built for demo — deploy with AWS Amplify</div>
+      <div class="container">© Dmitrii Karaulanov — Software Engineer</div>
     </footer>
 
     <script src="js/app.js" defer></script>
