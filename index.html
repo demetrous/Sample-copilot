@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Sample Static Site</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1 class="logo">Sample Site</h1>
+        <nav>
+          <button id="themeToggle" class="btn">Toggle Theme</button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <h2>Welcome</h2>
+        <p>
+          This is a minimal static site scaffolded for deployment to AWS Amplify
+          via GitHub.
+        </p>
+        <button id="cta" class="btn primary">Click me</button>
+        <p id="msg" aria-live="polite"></p>
+      </section>
+
+      <section class="grid">
+        <article>
+          <h3>Vanilla HTML</h3>
+          <p>No frameworks — just plain HTML, CSS and JS.</p>
+        </article>
+        <article>
+          <h3>Fast deploy</h3>
+          <p>
+            Connect this repository to AWS Amplify Console and deploy from the
+            chosen branch.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">Built for demo — deploy with AWS Amplify</div>
+    </footer>
+
+    <script src="js/app.js" defer></script>
+  </body>
+</html>
